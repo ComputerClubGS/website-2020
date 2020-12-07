@@ -12,13 +12,13 @@ export default function Members(){
     img={details.img}/>);
   
   return(
-    <>
+    <div clasName="members">
     <h1 className="ss">
         Members
       </h1>
       <div className="sop">
-      {membercard} 
+        {membercard} 
       </div>
-      </>
+      </div>
   )
 }

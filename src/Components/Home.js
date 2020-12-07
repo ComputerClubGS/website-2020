@@ -1,10 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../Css files/Home.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import Members from './Members'
-import {NavLink} from 'react-bootstrap'
+
 function Home() {
     return (
 
@@ -27,7 +24,7 @@ function Home() {
   
   <div className="top-wrapper">
     <div className="cover-text">
-      <img src="https://computerclubgs.github.io/logotp.png" width="135" height="135.5"></img>
+      <img src="https://computerclubgs.github.io/logotp.png" width="135" height="135.5" />
     </div>  
     <div className="container">
       <h2>COMPUTER CLUB</h2>
