@@ -1,0 +1,13 @@
+.feedback-box{
+    padding : 0px 20px 0px 20px;
+    font-size: 25px;
+    background-color:#CCC ;
+    color: rgb(32, 32, 28);
+    min-width:50px;
+}
+.feedback-area{
+    padding : 0px 20px 0px 20px;
+    font-size: 12px;
+    background-color:#CCC ;
+    color: rgb(32, 32, 28);
+}

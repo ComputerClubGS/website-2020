@@ -1,0 +1,70 @@
+
+.sop
+{
+    display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(345px, 0.25fr)) ;
+   justify-content: center;
+   grid-gap: 25px;
+   
+    /* grid-template-rows:  5;  */
+    align-items: start;
+}
+
+
+
+
+.ss{
+    text-align: center;
+    color:white;
+    font-family: cursive;
+    text-transform: uppercase;
+     font-weight: 50px;
+     letter-spacing: 8px;
+     font-size: 60px;
+     margin-bottom: 80px;
+     margin-top: 30px;
+
+}
+
+
+
+.name{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.dtx
+{
+  transform: scale(0.98);
+  font-family: "Lato";
+  margin: 10px 0;
+  transition: all 0.1s;
+  background-color: #03506F;
+
+}
+.dtx:hover{
+  box-shadow: 0 5px 10px rgba(255,255,255,0.99);
+  transform:scale(1);
+}
+.head
+{
+  text-align: center;
+   font-family:  "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight:900;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+.aps{
+  font-family: "Lato";
+  font-weight: 900;
+  padding: 0;
+}
+.MuiTypography-h5
+{
+  font-weight: 900;
+}

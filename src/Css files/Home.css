@@ -1,0 +1,94 @@
+body {
+  font-family: "Frutiger";
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(AdobeStock_189224831.jpeg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.nav-spacing
+{
+  padding-left: 5rem !important;
+}
+
+.main {
+  background-color: #030607;
+  height:auto;
+  display: flex;
+  flex-wrap:wrap;
+  animation-name:main-bg;
+  animation-duration:5s;
+  animation-iteration-count: infinite;   
+}
+
+@keyframes main-bg{
+  
+  0% {background-color: rgba(53, 50, 50, 0.672);}
+  50%  {background-color: #002633;}
+  100%  {background-color: #454545;}
+  0% {background-color:rgba(53, 50, 50, 0.672);}
+}
+
+
+.news
+{
+    padding:0px 0px 0px 0px;
+    float:right;
+    margin-top:35px;
+    margin-left:20px;
+    width:225px;
+    height:300px;
+    background-color:#9ee2f8;
+    border: 2px solid black ;
+    text-align: center;
+    color:black;
+    font-weight: 600; 
+}
+
+.news-header
+{
+   padding:3px;
+   text-align: center;
+   background-color: #131414;
+   font-weight:light;
+   margin-top:0px;
+   color:white;
+}
+
+.content{
+  padding:35px 0px 10px 0px;
+  float:left;
+  margin-left:auto;
+  font-family: "Open Sans";
+  color:white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width:auto;
+  margin-right: auto;
+}
+marquee{
+  animation-name: marquee-news;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+@keyframes marquee-news{
+  0% {color:red;}
+  25% {color:blue;}
+  50% {color:green;}
+  75% {color: yellow;}
+  100% {color: #CCC;}
+  0% {color: red;}
+}
+.content-data{
+  max-width: 1000px;
+  text-align: justify;
+}
+
+.content-heading{
+  text-align: center;
+}

@@ -1,0 +1,33 @@
+
+.events
+{
+    padding:20px 20px;
+    height:auto;
+    width: auto;
+}
+.events-header
+{
+    position: relative;
+    color:black;
+    margin-bottom:20px;
+    height:70px;
+    font-size: 40px;
+    margin: 40px;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px #343A40;
+    background: linear-gradient(to right, #343A40, white,#343A40) ;
+}
+
+.card-style{
+    display: flex;
+    flex-direction: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.carousel{
+    color:#000000;
+    height:500px;
+    width: auto;
+    background-color : #000000;
+}
