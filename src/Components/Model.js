@@ -18,7 +18,7 @@ function MyVerticallyCenteredModal(props) {
         <Modal.Body className="modal-body">
           
         <span>Name  <input type="text" name="feedback-text" id="feedback-text" className="feedback-box"/></span><br/><br/>
-        <span>Email <input type="text" name="feedback-email" id="feedback-email"  className="feedback-box"/></span><br/><br/>
+        <span>E-mail <input type="text" name="feedback-email" id="feedback-email"  className="feedback-box"/></span><br/><br/>
         <span>Write your feedback here.<br/><textarea className="feedback-area"/></span>
         </Modal.Body>
         <Modal.Footer>
