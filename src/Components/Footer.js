@@ -16,19 +16,22 @@ import Feedback from './Model';
             </div>
             <div className="footer-body">
             <div className="contact">
-                    <ul> 
-                        <li>
+                    <ul>
+                        <a href="maps:Computer Engineering Department, SGSITS, Indore (M.P.)" ><li>
                         <i className="fa fa-map-marker" aria-hidden="true"/>
-                        <span className="space">__</span>CSE dept. SGSITS,Indore (M.P.)
+                        <span className="space">__</span>Computer Engineering Department, SGSITS, Indore (M.P.)
                         </li>
-                        <li >
+                        </a>
+                        <a href="tel:+91 93400-52393" ><li >
                         <i className="fa fa-phone" aria-hidden="true"/>
-                        <span className="space">__</span>+91 9340052393
+                        <span className="space">__</span>+91 93400-52393
                         </li>
-                        <li>
+                        </a>
+                        <a href="mailto:computerclub90@gmail.com" ><li>
                         <i className="fa fa-envelope" aria-hidden="true"/>
                             <span className="space">__</span>computerclub90@gmail.com
                         </li>
+                        </a>
                     </ul>
                 </div>
                 <div className="feedback">
@@ -38,11 +41,11 @@ import Feedback from './Model';
             </div>
             <div className="footer-end">
                 <div className="social-media">
-                    <span><GitHubIcon/></span>
-                    <span><InstagramIcon/></span>
-                    <span><TwitterIcon/></span>
-                    <span><YouTubeIcon/></span>
-                    <span><LinkedInIcon/></span>
+                    <a href="https://github.com/ComputerClubGS" rel="noopener noreferrer" target="_blank" title="GitHub"><span className="git-icon"><GitHubIcon/></span></a>
+                    <a href="https://instagram.com/clubcomputer"  rel="noopener noreferrer" target="_blank" title="Instagram"><span className="ig-icon"><InstagramIcon/></span></a>
+                    <a href="https://twitter.com/computerclub90" rel="noopener noreferrer" target="_blank" title="Twitter"><span className="twitter-icon"><TwitterIcon/></span></a>
+                    <a href="https://youtube.com/channel/UCzaKHuHfJPMpfajm5g04l0A" rel="noopener noreferrer" target="_blank" title="Youtube"><span className="yt-icon"><YouTubeIcon/></span></a>
+                    <a href="https://linkedin.com/company/computer-club-cc/" rel="noopener noreferrer" target="_blank" title="LinkedIn"><span className="li-icon"><LinkedInIcon/></span></a>
                 </div>
             </div>
         </div>  

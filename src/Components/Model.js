@@ -1,9 +1,10 @@
 import React from 'react'
 import {Modal, Button} from 'react-bootstrap'
 import '../Css files/Model.css'
+
 function MyVerticallyCenteredModal(props) {
     return (
-      <Modal
+      <Modal className="modal-bg"
         {...props}
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
@@ -14,7 +15,7 @@ function MyVerticallyCenteredModal(props) {
             Feedback
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="modal-body">
           
         <span>Name  <input type="text" name="feedback-text" id="feedback-text" className="feedback-box"/></span><br/><br/>
         <span>Email <input type="text" name="feedback-email" id="feedback-email"  className="feedback-box"/></span><br/><br/>

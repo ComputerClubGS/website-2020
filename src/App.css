@@ -1,4 +1,14 @@
 
 .App{
     background-color:#002633;   
-}
+    animation-name:main-bg;
+    animation-duration:10s;
+    animation-iteration-count: infinite;   
+  }
+  
+  @keyframes main-bg{
+    
+    0% {background-color: #1f3d7a;}
+    50%  {background-color: #002633;}
+    100%  {background-color: #002080;}
+  }
