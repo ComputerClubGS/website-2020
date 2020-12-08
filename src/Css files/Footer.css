@@ -52,6 +52,24 @@
     background-color: #131414;
     
 }
+a{
+    color:white;
+}
+.yt-icon:hover{
+    color:#FF0000;
+}
+.git-icon:hover{
+    color:white;
+}
+.twitter:hover{
+    color:#00acee;
+}
+.li-icon:hover{
+    color:#0e76a8;
+}
+.ig-icon:hover{
+    color:#8a3ab9;
+}
 
 .social-media
 {
@@ -66,6 +84,9 @@
     cursor: pointer;
 }
 .space{
+    color: #030607;
+}
+.space:hover{
     color: #030607;
 }
 .feedback{
