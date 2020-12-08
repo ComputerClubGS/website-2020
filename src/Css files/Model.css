@@ -11,3 +11,11 @@
     background-color:#CCC ;
     color: rgb(32, 32, 28);
 }
+.modal-bg .modal-content{
+    background-color: #9ee2f8;
+}
+.modal-body{
+    color: black;
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+}

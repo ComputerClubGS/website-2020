@@ -24,13 +24,13 @@ function Home() {
   
   <div className="top-wrapper">
     <div className="cover-text">
-      <img src="https://computerclubgs.github.io/logotp.png" width="135" height="135.5" />
+      <img alt="logoCC" src="https://computerclubgs.github.io/logotp.png" width="135" height="135.5" />
     </div>  
     <div className="container">
       <h2>COMPUTER CLUB</h2>
       <h3>LET'S CREATE THE THINGS TOGETHER</h3>
-      <h4>The Technical Club of Depatment of Computer Science and Engineering</h4>
-      <p>Shri Govindram Seksaria Institute of Science and Technology,Indore (M.P)</p>
+      <h4>Technical Club of CSE Department</h4>
+      <a href="http://sgsits.ac.in" rel="noopener noreferrer" target="_blank"><p>Shri Govindram Seksaria Institute of Science and Technology,Indore (M.P)</p></a>
     </div>
   </div>
 
