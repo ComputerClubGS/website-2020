@@ -1,10 +1,11 @@
+
 body {
   font-family: "Frutiger";
 }
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(../Images/AdobeStock_189224831.jpeg);
+  background-image: url(../Images/Homepage-banner.jpeg);
   background-size: cover;
   color: white;
   text-align: center;
@@ -18,7 +19,14 @@ body {
 .main {
   height:auto;
   display: flex;
-  flex-wrap:wrap;
+  flex-direction: flex-start;
+  
+}
+@media ( max-width : 700px){
+  .main { flex-wrap:wrap;}
+  .news { position: relative;
+          left:50%;
+        }
 }
 a{
   color: white;
@@ -55,12 +63,13 @@ a:hover{
 }
 
 .content{
-  padding:35px 20px 10px 20px;
+  padding:35px 50px 50px 50px;
   float:left;
   font-family: "Open Sans";
   color:white;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   flex-wrap: wrap;
   width:auto;
 }
@@ -75,10 +84,6 @@ marquee{
   50% {color:#206040;}
   75% {color: #660066;}
   100% {color: #6b00b3;}
-}
-.content-data{
-  max-width: 1000px;
-  text-align: justify;
 }
 
 .content-heading{

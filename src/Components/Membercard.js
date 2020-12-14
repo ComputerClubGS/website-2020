@@ -66,13 +66,13 @@ export default function Membercard(props)
         subheader={props.designation}
       />
       
-      <CardActions disableSpacing style={{backgroundColor:"white",padding:"-10px 10px",marginTop:"-30px"}}>
-      <SocialIcon url="http://linkedin.com/in/jaketrent"   bgColor="#0e76a8 "   style={{ height: 35, width: 35,marginLeft:5}} />
+      <CardActions disableSpacing style={{backgroundColor:"white", padding:"-10px 10px", marginTop:"-30px"}}>
+      <SocialIcon url="http://linkedin.com/in/jaketrent" bgColor="#0e76a8 " style={{ height: 35, width: 35,marginLeft:5}} />
         <IconButton aria-label="Linkel">
   
         </IconButton>
         <IconButton aria-label="share">
-          <SocialIcon url="http://github.com/jaketrent"  bgColor="black" style={{ height: 35, width: 35,marginLeft:-10}} />
+          <SocialIcon url="http://github.com/jaketrent" bgColor="black" style={{ height: 35, width: 35,marginLeft:-10}} />
         </IconButton>
         <IconButton
           className={clsx(classes.expand, {

@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-<BrowserRouter>
+      <BrowserRouter>
         <Navbarr/>
         <Switch>
           <Route exact path="/">
@@ -23,6 +23,7 @@ function App() {
           <Route path="/members">
             <Members />
           </Route>
+          
         </Switch>
       </BrowserRouter>
       <Footer />

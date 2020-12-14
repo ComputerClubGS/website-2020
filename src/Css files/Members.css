@@ -45,7 +45,7 @@
   background-color: #03506F;
 
 }
-.dtx:hover{
+.dtx:hover{ 
   box-shadow: 0 5px 10px rgba(255,255,255,0.99);
   transform:scale(1);
 }
@@ -69,3 +69,4 @@
 {
   font-weight: 900;
 }
+
