@@ -6,6 +6,7 @@ import Carouselcard from './Carouselcard';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import cardDetails from './Eventcarddetails';
 import carouselCardDetails from './Eventcarouseldetails'
+import { TextFocus } from 'react-text-effects';
 function Events() {
  
   const cards = cardDetails.map(cardDetails => <Cardd cardDetails={cardDetails} key={cardDetails.id} />);
@@ -13,7 +14,8 @@ function Events() {
   return (
     <div className="events">
       <div className="events-header">
-        Events
+      <TextFocus type='in' duration='4s'>Events
+      </TextFocus>
       </div>
       <MDBContainer>
       <MDBCarousel

@@ -12,10 +12,12 @@
     color:white;
     height:50px;
     background-color:#131414;
-    text-align:center;
     font-weight: bolder;
     font-size: 50px;
     cursor: default;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 .footer-body
 {
@@ -33,6 +35,7 @@
     height:auto;
     font-weight: bolder;
     padding:0px 20px 0px 20px;
+    display: flex;
 }
 
 .contact ul
@@ -83,13 +86,18 @@ a{
 {
     cursor: pointer;
 }
-.space{
-    color: #030607;
-}
-.space:hover{
-    color: #030607;
-}
+
 .feedback{
-    padding: 30px 50px 0px 20px;
+
+    padding: 30px 50px 10px 20px;
     text-align: center;
+    
+}
+
+@media( max-width: 900px){
+    .footer-body{display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding:0px ;
+    }
 }

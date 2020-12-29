@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../Css files/Home.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import TextyAnim from 'rc-texty';
 function Home() {
-    return (
+  
+
+        return (
 
 <div>
 
@@ -27,10 +29,10 @@ function Home() {
       <img alt="logoCC" src="https://computerclubgs.github.io/logotp.png" width="135" height="135.5" />
     </div>  
     <div className="container">
-      <h2>COMPUTER CLUB</h2>
-      <h3>LET'S CREATE THE THINGS TOGETHER</h3>
-      <h4>Technical Club of CSE Department</h4>
-      <a href="http://sgsits.ac.in" rel="noopener noreferrer" target="_blank"><p>Shri Govindram Seksaria Institute of Science and Technology,Indore (M.P)</p></a>
+      <h2><TextyAnim>COMPUTER CLUB</TextyAnim></h2>
+      <h3><TextyAnim>LET'S CREATE THE THINGS TOGETHER</TextyAnim></h3>
+      <h4><TextyAnim>Technical Club of CSE Department</TextyAnim></h4>
+      <a href="http://sgsits.ac.in" rel="noopener noreferrer" target="_blank"><p><TextyAnim>Shri Govindram Seksaria Institute of Science and Technology,Indore (M.P)</TextyAnim></p></a>
     </div>
   </div>
 

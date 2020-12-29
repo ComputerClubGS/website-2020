@@ -19,17 +19,17 @@ import Feedback from './Model';
                     <ul>
                         <a href="maps:Computer Engineering Department, SGSITS, Indore (M.P.)" ><li>
                         <i className="fa fa-map-marker" aria-hidden="true"/>
-                        <span className="space">__</span>Computer Engineering Department, SGSITS, Indore (M.P.)
+                        &nbsp;&nbsp;Computer Engineering Department, SGSITS, Indore (M.P.)
                         </li>
                         </a>
                         <a href="tel:+91 93400-52393" ><li >
                         <i className="fa fa-phone" aria-hidden="true"/>
-                        <span className="space">__</span>+91 93400-52393
+                        &nbsp;&nbsp;+91 93400-52393
                         </li>
                         </a>
                         <a href="mailto:computerclub90@gmail.com" ><li>
                         <i className="fa fa-envelope" aria-hidden="true"/>
-                            <span className="space">__</span>computerclub90@gmail.com
+                        &nbsp;&nbsp;computerclub90@gmail.com
                         </li>
                         </a>
                     </ul>

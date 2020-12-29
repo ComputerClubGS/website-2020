@@ -25,7 +25,7 @@ body {
 @media ( max-width : 700px){
   .main { flex-wrap:wrap;}
   .news { position: relative;
-          left:50%;
+          left:35%;
         }
 }
 a{

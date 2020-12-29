@@ -13,12 +13,12 @@ export default function Navbarr() {
     <Nav className="mr-auto">
     </Nav>
     <Nav>
-      <Link to="/" className="nav-spacing">ABOUT US</Link>
-      <Link to="/members" className="nav-spacing">MEMBERS</Link>
-      <Link to ="/events" className="nav-spacing">EVENTS</Link>
-      <Link to="/" className="nav-spacing">CONTACT US</Link>
+      <Nav.Link eventKey={1}><Link to="/" className="nav-spacing">ABOUT US</Link></Nav.Link>
+      <Nav.Link eventKey={2}><Link to="/members" className="nav-spacing">MEMBERS</Link></Nav.Link>
+      <Nav.Link eventKey={3}><Link to ="/events" className="nav-spacing">EVENTS</Link></Nav.Link>
+      <Nav.Link eventKey={4}><Link to="/" className="nav-spacing">CONTACT US</Link></Nav.Link>
     </Nav>
-  </Navbar.Collapse>
+  </Navbar.Collapse> 
 </Navbar>
     </>
     )
