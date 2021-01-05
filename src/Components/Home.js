@@ -40,7 +40,7 @@ function Home() {
     <div>
       <div className="news">
         <div className="news-header">News and Updates</div>
-        <marquee direction="down" height="265" width="200"  scrollamount="5" behavior="alternate">1. Venturethon<br/>2. Hackathon<br/>3. Game Development</marquee>
+        <marquee direction="down" height="265" width="200" scrollamount="5" behavior="alternate">1. Venturethon<br/>2. Hackathon<br/>3. Game Development</marquee>
       </div>
     </div>
     <div className="content">

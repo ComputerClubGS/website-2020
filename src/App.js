@@ -6,7 +6,7 @@ import Footer from './Components/Footer';
 import Members from './Components/Members';
 import Navbarr from './Components/Navbarr'
 import {Switch, Route, BrowserRouter} from "react-router-dom";
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
