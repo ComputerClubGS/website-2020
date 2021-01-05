@@ -14,13 +14,13 @@ function App() {
       <BrowserRouter>
         <Navbarr/>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/website-2020/">
             <Home />
           </Route>
-          <Route path="/events">
+          <Route path="/website-2020/events">
             <Events />
           </Route>
-          <Route path="/members">
+          <Route path="/website-2020/members">
             <Members />
           </Route>
           
