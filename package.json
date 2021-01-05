@@ -28,7 +28,10 @@
     "react-social-icons": "^4.1.0",
     "react-text-effects": "^1.0.0"
   },
+  "homepage": "https://computerclubgs.github.io/website-2020",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy" : "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
