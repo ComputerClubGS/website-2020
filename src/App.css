@@ -3,7 +3,8 @@
     background-color:#002633;   
     animation-name:main-bg;
     animation-duration:10s;
-    animation-iteration-count: infinite;   
+    animation-iteration-count: infinite;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";   
   }
   
   @keyframes main-bg{
