@@ -1,47 +1,95 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "../Css files/nav.css";
+import logo from "../Images/logo.png";
+import GitHubIcon from '@material-ui/icons/GitHub';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import MenuIcon from '@material-ui/icons/Menu';
+import CancelIcon from '@material-ui/icons/Cancel';
 export default function Navbarr() {
+  useEffect(() => {
+    const toggleBtn = document.querySelector(".sidebar-toggle");
+    const closeBtn = document.querySelector(".close-btn");
+    const sidebar = document.querySelector(".sidebar");
+    const sideLinks = document.querySelector(".sidebar-links");
+    sideLinks.addEventListener("click", function(){
+      sidebar.classList.toggle("show-sidebar");
+    })
+    toggleBtn.addEventListener("click", function () {
+      sidebar.classList.toggle("show-sidebar");
+    })
+
+    closeBtn.addEventListener("click", function () {
+      sidebar.classList.toggle("show-sidebar");
+    })
+  })
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
-        <Navbar.Brand>
-          <img
-            src="https://computerclubgs.github.io/logotp.png"
-            width="45"
-            height="45"
-            className="d-inline-block align-top"
-            alt="React Bootstrap logo"
-          />
-          <Navbar.Brand>COMPUTER CLUB</Navbar.Brand>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto"></Nav>
-          <Nav>
-            <Nav.Link eventKey={1}>
-              <Link to="/website-2020/" className="nav-spacing">
-                ABOUT US
-              </Link>
-            </Nav.Link>
-            <Nav.Link eventKey={2}>
-              <Link to="/website-2020/members" className="nav-spacing">
-                MEMBERS
-              </Link>
-            </Nav.Link>
-            <Nav.Link eventKey={3}>
-              <Link to="/website-2020/events" className="nav-spacing">
-                EVENTS
-              </Link>
-            </Nav.Link>
-            <Nav.Link eventKey={4}>
-              <Link to="/website-2020/" className="nav-spacing">
-                CONTACT US
-              </Link>
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+      <button className="sidebar-toggle" id="open">
+      <span><MenuIcon className="menuIcon" fontSize="inherit"/></span>
+      </button>
+      <aside className="sidebar">
+        <div className="sidebar-header">
+          <div className="cc-logo"><img src={logo} className="logo" alt="" /><span className="logo-heading">Computer Club</span></div>
+          <button className="close-btn" id="close">
+            <span><CancelIcon/></span>
+          </button>
+        </div>
+        <ul class="sidebar-links">
+          <li>
+            <Link to="/website-2020/" className="nav-spacing" id="about">
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link to="/website-2020/members" className="nav-spacing" id="members">
+              Members
+            </Link>
+          </li>
+          <li>
+            <Link to="/website-2020/events" className="nav-spacing" id="events">
+              Events
+            </Link>
+          </li>
+          <li>
+            <Link to="/website-2020/" className="nav-spacing" id="contact-us">
+              Contact Us
+            </Link>
+          </li>
+        </ul>
+
+        <ul class="social-icons">
+          <li>
+            <a href="https://github.com/ComputerClubGS" id="github">
+              <span className="icon1"><GitHubIcon /></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/clubcomputer" id="instagram">
+              <span className="icon2"><InstagramIcon /></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/computerclub90" id="twitter">
+              <span className="icon3"><TwitterIcon /></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtube.com/channel/UCzaKHuHfJPMpfajm5g04l0A" id="youtube">
+              <span className="icon4"><YouTubeIcon /></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/company/computer-club-cc/" id="linkedin">
+              <span className="icon5"><LinkedInIcon /></span>
+            </a>
+          </li>
+        </ul>
+      </aside>
     </>
   );
 }

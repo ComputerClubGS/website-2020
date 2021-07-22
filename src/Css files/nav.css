@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #151320;
+    display: block;
+}
+
+.sidebar-links{
+    color: black;
+    padding:0;
+}
+#about:hover{
+    background-color: #CCCCFF;
+    text-decoration: none;
+    color: inherit;
+}
+#members:hover{
+    background-color: #CCCCFF;
+    text-decoration: none;
+    color: inherit;
+}
+#events:hover{
+    background-color: #CCCCFF;
+    text-decoration: none;
+    color: inherit;
+}
+#contact-us:hover{
+    background-color: #CCCCFF;
+    text-decoration: none;
+    color: inherit;
+}
+.cc-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    justify-self: center;
+    height: 70px;
+    width: 70px;
+}
+.logo-heading{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: Rochester;
+}
+.sidebar-links a {
+    display: block;
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding: 1rem 1.5rem;
+    padding-left: 1.5rem;
+    font-weight: bold;
+    font-family: Rochester;
+}
+  
+button {
+    background-color: transparent;
+    float: right;
+    border: none;
+}
+#open {
+    color: rgb(20,193,203);
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+    /*animation-name: shake;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;*/
+}
+.menuIcon{
+    font-size: 2rem !important;
+    animation: shake 2s ease-in-out infinite;
+
+}
+
+@keyframes shake{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.6);
+    }
+    100%{
+        transform: scale(1);;
+    }
+}
+#close{
+    color:#151320;
+}
+#open:hover {
+    color: white;
+}
+#close:hover {
+    color: red;
+}
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+  }
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#808080;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    box-shadow: black;
+    transition:  all 0.3s linear;;
+    transform: translate(-100%);
+    z-index:10;
+  }
+  .show-sidebar {
+    transform: translate(0);
+  }
+  .sidebar-toggle {
+    transform: translate(0);
+}
+.social-icons {
+    align-items: center;
+    display: flex;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    margin: 0;
+    justify-content: space-around;
+    padding-left: 0.1rem ;
+  }
+  .icon4:hover{
+    color:#FF0000;
+}
+.icon1:hover{
+    color:#333;
+}
+.icon3:hover{
+    color:#00acee;
+}
+.icon5:hover{
+    color:#0e76a8;
+}
+.icon2:hover{
+    color:#8a3ab9;
+}
+@media screen and (min-width: 676px) {
+    .sidebar {
+      width: 400px;
+    }
+  }

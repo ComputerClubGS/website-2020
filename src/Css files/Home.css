@@ -1,15 +1,31 @@
 
 body {
   font-family: "Frutiger";
+  overflow-x: hidden;
 }
 
 .top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(../Images/Homepage-banner.jpeg);
-  background-size: cover;
+  padding: 100px 0 100px 0;
   color: white;
   text-align: center;
+  height:100vh;
+  position: relative;
+  z-index: 1;
 }
+.video-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  object-fit: cover;
+  z-index: -1;
+}
+p{
+  color:white;
+}
+
 
 .nav-spacing
 {
@@ -19,73 +35,50 @@ body {
 .main {
   height:auto;
   display: flex;
-  flex-direction: flex-start;
-  
+  flex-direction: column;
+  margin-top: 50px;
 }
-@media ( max-width : 700px){
-  .main { flex-wrap:wrap;}
-  .news { position: relative;
-          left:35%;
-        }
+.about-us{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
-a{
-  color: white;
+#about-img{
+  transition: all .2s ease-in-out;
+  width: 450px;
+  height: 450px;
 }
-a:hover{
-  color:white;
+#about-img:hover{
+  transform: scale(1.1);
+  cursor:pointer;
+}
+#values-img{
+  transition: all .2s ease-in-out;
+  width: 450px;
+  height: 450px;
+}
+#values-img:hover{
+  transform: scale(1.1);
+  cursor:pointer;
+}
+#vision-img{
+  transition: all .2s ease-in-out;
+  width: 450px;
+  height: 450px;
+}
+#vision-img:hover{
+  transform: scale(1.1);
   cursor:pointer;
 }
 
-
-.news
-{
-    padding:0px 0px 0px 0px;
-    float:right;
-    margin-top:35px;
-    margin-left:20px;
-    width:225px;
-    height:300px;
-    background-color:#9ee2f8;
-    border: 2px solid black ;
-    text-align: center;
-    color:black;
-    font-weight: 800; 
+@media ( max-width : 700px){
+  .main { flex-wrap:wrap;}
 }
-
-.news-header
-{
-   padding:3px;
-   text-align: center;
-   background-color: #131414;
-   font-weight:light;
-   margin-top:0px;
-   color:white;
-}
-
 .content{
-  padding:35px 50px 50px 50px;
-  float:left;
-  font-family: "Open Sans";
-  color:white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display : flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  width:auto;
-}
-marquee{
-  animation-name: marquee-news;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-}
-@keyframes marquee-news{
-  0% {color:black;}
-  25% {color:#0f2544;}
-  50% {color:#206040;}
-  75% {color: #660066;}
-  100% {color: #6b00b3;}
+  overflow: hidden;
 }
 
-.content-heading{
-  text-align: center;
-}

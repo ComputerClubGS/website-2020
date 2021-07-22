@@ -16,13 +16,9 @@ export default function Members(){
     
     <div clasName="members">
     <center>
-    <h1 className="ab">
-    <TextTypeWriter duration='5s'>
-    <h1 className="ss">
+    <h2 className="ss" style={{marginTop:"0"}}>
       Members
-    </h1>
-      </TextTypeWriter>
-      </h1>
+    </h2>
       </center>
       <div className="sop">
         {membercard} 
